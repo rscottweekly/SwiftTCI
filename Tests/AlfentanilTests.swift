@@ -16,7 +16,10 @@ class AlfentanilTests : QuickSpec {
         var testPatient : Maitre!
         
         describe("Test a male") {
-            testPatient = try! Maitre(Height: 170, Weight: 70, Age: 30, Sex: "M")
+            beforeEach {
+                testPatient = try! Maitre(Height: 170, Weight: 70, Age: 30, Sex: "M")
+            }
+            
             it("calculates volumes correctly") {
                 expect{testPatient.v1}.to(beCloseTo(7.77, within: 0.01))
                 expect{testPatient.v2}.to(beCloseTo(12.01, within:0.01))
@@ -26,19 +29,13 @@ class AlfentanilTests : QuickSpec {
                 expect{testPatient.Q1}.to(beCloseTo(0.356, within: 0.001))
             }
         }
+        describe("Test a female") {
+            beforeEach {
+                testPatient = try! Maitre(Height:165, Weight: 80, Age: 60, Sex: "F")
+            }
+            it("Calculates V1 Correctly") {
+                expect{testPatient.v1}.to(beCloseTo(10.24, within:0.01))
+            }
+        }
     }
 }
-
-
-//testpatient = alfentanil.Maitre(30, 70, 170, 'm')
-//testpatient2 = alfentanil.Maitre(60, 80, 165, 'f')
-//
-//assert round(testpatient.v1, 2) == 7.77
-//assert round(testpatient.v2, 2) == 12.01
-//assert round(testpatient.v3, 2) == 10.48
-//assert round(testpatient.q1, 3) == 0.356
-//
-//assert round(testpatient2.v1, 2) == 10.24
-//
-//with pytest.raises(ValueError):
-//alfentanil.Maitre(20, 80, 180, 'g')

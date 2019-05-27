@@ -18,7 +18,7 @@ public class Maitre : AlfentatilBaseModel {
         
         let SexEnum = try SetSex(Sex: Sex)
         
-        self.v1 = Weight * (SexEnum == .M ? 0.11 : 0128)
+        self.v1 = Weight * (SexEnum == .M ? 0.111 : 0.128)
         
         self.k12 = 0.104
         self.k13 = 0.017
