@@ -18,6 +18,7 @@
 		537107D7229BA74200FE3B3C /* RemifentanilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107D6229BA74200FE3B3C /* RemifentanilTests.swift */; };
 		537107D9229BA78800FE3B3C /* AlfentanilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107D8229BA78800FE3B3C /* AlfentanilTests.swift */; };
 		537107DB229BACA000FE3B3C /* Alfentanil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107DA229BACA000FE3B3C /* Alfentanil.swift */; };
+		537107DD229C817600FE3B3C /* InfusionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107DC229C817600FE3B3C /* InfusionTests.swift */; };
 		53AA6878229A61C500BFB492 /* TestLeanBodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */; };
 		53AA687A229B3E9000BFB492 /* TestPropofol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA6879229B3E9000BFB492 /* TestPropofol.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		537107D6229BA74200FE3B3C /* RemifentanilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemifentanilTests.swift; sourceTree = "<group>"; };
 		537107D8229BA78800FE3B3C /* AlfentanilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfentanilTests.swift; sourceTree = "<group>"; };
 		537107DA229BACA000FE3B3C /* Alfentanil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alfentanil.swift; sourceTree = "<group>"; };
+		537107DC229C817600FE3B3C /* InfusionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfusionTests.swift; sourceTree = "<group>"; };
 		53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLeanBodyMass.swift; sourceTree = "<group>"; };
 		53AA6879229B3E9000BFB492 /* TestPropofol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropofol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				53AA6879229B3E9000BFB492 /* TestPropofol.swift */,
 				537107D6229BA74200FE3B3C /* RemifentanilTests.swift */,
 				537107D8229BA78800FE3B3C /* AlfentanilTests.swift */,
+				537107DC229C817600FE3B3C /* InfusionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				53AA687A229B3E9000BFB492 /* TestPropofol.swift in Sources */,
 				537107D9229BA78800FE3B3C /* AlfentanilTests.swift in Sources */,
+				537107DD229C817600FE3B3C /* InfusionTests.swift in Sources */,
 				53AA6878229A61C500BFB492 /* TestLeanBodyMass.swift in Sources */,
 				537107D7229BA74200FE3B3C /* RemifentanilTests.swift in Sources */,
 			);

@@ -22,11 +22,11 @@ public enum ErrorWarnManagement {
 public class BasePropofol : ThreeBaseModel {
     var OldConcs: Dictionary<String, Double?> = ["X1":nil, "X2":nil, "X3":nil, "xeo":nil]
     
-    private func SetConcs() {
+    public func SetConcs() {
         self.OldConcs = ["X1": self.x1, "X2": self.x2, "X3": self.x3, "xeo": self.xeo]
     }
     
-    private func ResetConcs() throws -> Void {
+    public func ResetConcs(clearOld : Bool = true) throws -> Void {
         // resets the concentrations to stored values
         guard let x1 = self.OldConcs["X1"]! else {
             throw PropofolError.OldConcentrationError(msg: "X1 not set")
@@ -49,13 +49,15 @@ public class BasePropofol : ThreeBaseModel {
         self.x3 = x3
         self.xeo = xeo
         
-        OldConcs["X1"] = nil
-        OldConcs["X2"] = nil
-        OldConcs["X3"] = nil
-        OldConcs["xeo"] = nil
+        if clearOld {
+            OldConcs["X1"] = nil
+            OldConcs["X2"] = nil
+            OldConcs["X3"] = nil
+            OldConcs["xeo"] = nil
+        }
     }
     
-    func TenSeconds(_ mgpersec:Double) -> Double {
+    public func TenSeconds(_ mgpersec:Double) -> Double {
         for _ in 0..<10 {
             self.giveDrug(doseMilligrams: mgpersec)
             self.waitTime(timeSeconds: 1)
@@ -63,7 +65,7 @@ public class BasePropofol : ThreeBaseModel {
         return self.x1
     }
     
-    func effectBolus(Target: Double) throws -> Double {
+    public func effectBolus(Target: Double) throws -> Double {
         // determines size of bolus needed over 10 seconds to achieve target at ttpe
         
         ///store concentrations so we can reset after search
@@ -88,14 +90,15 @@ public class BasePropofol : ThreeBaseModel {
         
             step = Double(effect_error) / -5.0
             bolus += step
+            try self.ResetConcs(clearOld: false)
+
         } while !(-1 < effect_error) && (effect_error < 1)
         
         //reset concentrations
-        try self.ResetConcs()
         return round(mgpersec * 10, toDecimalPlaces: 2)
     }
     
-    func PlasmaInfusion(Target: Double, Time:Int16) throws -> [(Double, Double)] {
+    public func PlasmaInfusion(Target: Double, Time:Int16) throws -> [(Double, Double)] {
         // Returns list of infusion rates to maintain desired plasma concentations
         //        returns:
         //        list of infusion rates over 10 seconds
