@@ -1,6 +1,6 @@
 //
-//  SwiftTCI.swift
-//  SwiftTCI
+//  Tests.swift
+//  Tests
 //
 //  Created by Ross Scott-Weekly on 24/5/19.
 //  Derived from PyTCI - https://github.com/JMathiszig-Lee/PyTCI
@@ -28,6 +28,16 @@
 //  OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-class SwiftTCI {
+import Quick
+import Nimble
+import SwiftTCI
 
+class SwiftTCITests: QuickSpec {
+    override func spec() {
+        describe("SwiftTCITests") {
+            it("works") {
+                expect(true).to(beTrue())
+            }
+        }
+    }
 }

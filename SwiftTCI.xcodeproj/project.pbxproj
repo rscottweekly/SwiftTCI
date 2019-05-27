@@ -8,7 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		532E39132297B0900091D860 /* SwiftTCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39122297B0900091D860 /* SwiftTCI.swift */; };
+		532E391A2297B0A20091D860 /* base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39192297B0A20091D860 /* base.swift */; };
+		532E391C2297E68E0091D860 /* LeanBodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E391B2297E68E0091D860 /* LeanBodyMass.swift */; };
+		532E39242297ED070091D860 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39232297ED070091D860 /* Tests.swift */; };
+		532E39262297ED070091D860 /* libSwiftTCI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E390F2297B0900091D860 /* libSwiftTCI.a */; };
+		532E39322298DAE20091D860 /* Propofol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39312298DAE20091D860 /* Propofol.swift */; };
+		532E3935229A2AD50091D860 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E3934229A2AD50091D860 /* Nimble.framework */; };
+		532E3937229A2AD50091D860 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E3936229A2AD50091D860 /* Quick.framework */; };
+		537107D5229B9DC300FE3B3C /* Remifentanil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107D4229B9DC300FE3B3C /* Remifentanil.swift */; };
+		537107D7229BA74200FE3B3C /* RemifentanilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107D6229BA74200FE3B3C /* RemifentanilTests.swift */; };
+		537107D9229BA78800FE3B3C /* AlfentanilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107D8229BA78800FE3B3C /* AlfentanilTests.swift */; };
+		537107DB229BACA000FE3B3C /* Alfentanil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537107DA229BACA000FE3B3C /* Alfentanil.swift */; };
+		53AA6878229A61C500BFB492 /* TestLeanBodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */; };
+		53AA687A229B3E9000BFB492 /* TestPropofol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA6879229B3E9000BFB492 /* TestPropofol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		532E39272297ED070091D860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532E39072297B0900091D860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532E390E2297B0900091D860;
+			remoteInfo = SwiftTCI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		532E390D2297B0900091D860 /* CopyFiles */ = {
@@ -25,6 +48,24 @@
 /* Begin PBXFileReference section */
 		532E390F2297B0900091D860 /* libSwiftTCI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftTCI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		532E39122297B0900091D860 /* SwiftTCI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTCI.swift; sourceTree = "<group>"; };
+		532E39192297B0A20091D860 /* base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base.swift; sourceTree = "<group>"; };
+		532E391B2297E68E0091D860 /* LeanBodyMass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeanBodyMass.swift; sourceTree = "<group>"; };
+		532E39212297ED070091D860 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532E39232297ED070091D860 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		532E39252297ED070091D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532E392C2298D94B0091D860 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		532E392D2298D9690091D860 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		532E392E2298D9B20091D860 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		532E39302298D9DF0091D860 /* setup */ = {isa = PBXFileReference; lastKnownFileType = text; path = setup; sourceTree = "<group>"; };
+		532E39312298DAE20091D860 /* Propofol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Propofol.swift; sourceTree = "<group>"; };
+		532E3934229A2AD50091D860 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532E3936229A2AD50091D860 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537107D4229B9DC300FE3B3C /* Remifentanil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remifentanil.swift; sourceTree = "<group>"; };
+		537107D6229BA74200FE3B3C /* RemifentanilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemifentanilTests.swift; sourceTree = "<group>"; };
+		537107D8229BA78800FE3B3C /* AlfentanilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfentanilTests.swift; sourceTree = "<group>"; };
+		537107DA229BACA000FE3B3C /* Alfentanil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alfentanil.swift; sourceTree = "<group>"; };
+		53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLeanBodyMass.swift; sourceTree = "<group>"; };
+		53AA6879229B3E9000BFB492 /* TestPropofol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropofol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,14 +76,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		532E391E2297ED070091D860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532E3935229A2AD50091D860 /* Nimble.framework in Frameworks */,
+				532E3937229A2AD50091D860 /* Quick.framework in Frameworks */,
+				532E39262297ED070091D860 /* libSwiftTCI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		532E39062297B0900091D860 = {
 			isa = PBXGroup;
 			children = (
+				532E392F2298D9C20091D860 /* bin */,
+				532E392E2298D9B20091D860 /* .gitignore */,
+				532E392C2298D94B0091D860 /* Cartfile */,
+				532E392D2298D9690091D860 /* Cartfile.private */,
 				532E39112297B0900091D860 /* SwiftTCI */,
+				532E39222297ED070091D860 /* Tests */,
 				532E39102297B0900091D860 /* Products */,
+				532E3933229A2AD50091D860 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				532E390F2297B0900091D860 /* libSwiftTCI.a */,
+				532E39212297ED070091D860 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +115,44 @@
 		532E39112297B0900091D860 /* SwiftTCI */ = {
 			isa = PBXGroup;
 			children = (
+				532E391B2297E68E0091D860 /* LeanBodyMass.swift */,
+				532E39192297B0A20091D860 /* base.swift */,
+				532E39312298DAE20091D860 /* Propofol.swift */,
 				532E39122297B0900091D860 /* SwiftTCI.swift */,
+				537107D4229B9DC300FE3B3C /* Remifentanil.swift */,
+				537107DA229BACA000FE3B3C /* Alfentanil.swift */,
 			);
 			path = SwiftTCI;
+			sourceTree = "<group>";
+		};
+		532E39222297ED070091D860 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				532E39232297ED070091D860 /* Tests.swift */,
+				532E39252297ED070091D860 /* Info.plist */,
+				53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */,
+				53AA6879229B3E9000BFB492 /* TestPropofol.swift */,
+				537107D6229BA74200FE3B3C /* RemifentanilTests.swift */,
+				537107D8229BA78800FE3B3C /* AlfentanilTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		532E392F2298D9C20091D860 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				532E39302298D9DF0091D860 /* setup */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		532E3933229A2AD50091D860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				532E3934229A2AD50091D860 /* Nimble.framework */,
+				532E3936229A2AD50091D860 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +175,24 @@
 			productReference = 532E390F2297B0900091D860 /* libSwiftTCI.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		532E39202297ED070091D860 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532E39292297ED070091D860 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				532E391D2297ED070091D860 /* Sources */,
+				532E391E2297ED070091D860 /* Frameworks */,
+				532E391F2297ED070091D860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532E39282297ED070091D860 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 532E39212297ED070091D860 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +204,9 @@
 				ORGANIZATIONNAME = "Ross Scott-Weekly";
 				TargetAttributes = {
 					532E390E2297B0900091D860 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					532E39202297ED070091D860 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -110,20 +224,56 @@
 			projectRoot = "";
 			targets = (
 				532E390E2297B0900091D860 /* SwiftTCI */,
+				532E39202297ED070091D860 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532E391F2297ED070091D860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		532E390B2297B0900091D860 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537107D5229B9DC300FE3B3C /* Remifentanil.swift in Sources */,
+				537107DB229BACA000FE3B3C /* Alfentanil.swift in Sources */,
+				532E391C2297E68E0091D860 /* LeanBodyMass.swift in Sources */,
+				532E391A2297B0A20091D860 /* base.swift in Sources */,
+				532E39322298DAE20091D860 /* Propofol.swift in Sources */,
 				532E39132297B0900091D860 /* SwiftTCI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		532E391D2297ED070091D860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AA687A229B3E9000BFB492 /* TestPropofol.swift in Sources */,
+				532E39242297ED070091D860 /* Tests.swift in Sources */,
+				537107D9229BA78800FE3B3C /* AlfentanilTests.swift in Sources */,
+				53AA6878229A61C500BFB492 /* TestLeanBodyMass.swift in Sources */,
+				537107D7229BA74200FE3B3C /* RemifentanilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532E39282297ED070091D860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532E390E2297B0900091D860 /* SwiftTCI */;
+			targetProxy = 532E39272297ED070091D860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		532E39142297B0900091D860 /* Debug */ = {
@@ -266,6 +416,40 @@
 			};
 			name = Release;
 		};
+		532E392A2297ED070091D860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.scottweekly.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		532E392B2297ED070091D860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.scottweekly.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +467,15 @@
 			buildConfigurations = (
 				532E39172297B0900091D860 /* Debug */,
 				532E39182297B0900091D860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532E39292297ED070091D860 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532E392A2297ED070091D860 /* Debug */,
+				532E392B2297ED070091D860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
