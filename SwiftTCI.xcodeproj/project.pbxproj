@@ -10,7 +10,6 @@
 		532E39132297B0900091D860 /* SwiftTCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39122297B0900091D860 /* SwiftTCI.swift */; };
 		532E391A2297B0A20091D860 /* base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39192297B0A20091D860 /* base.swift */; };
 		532E391C2297E68E0091D860 /* LeanBodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E391B2297E68E0091D860 /* LeanBodyMass.swift */; };
-		532E39242297ED070091D860 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39232297ED070091D860 /* Tests.swift */; };
 		532E39262297ED070091D860 /* libSwiftTCI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E390F2297B0900091D860 /* libSwiftTCI.a */; };
 		532E39322298DAE20091D860 /* Propofol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E39312298DAE20091D860 /* Propofol.swift */; };
 		532E3935229A2AD50091D860 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E3934229A2AD50091D860 /* Nimble.framework */; };
@@ -51,7 +50,6 @@
 		532E39192297B0A20091D860 /* base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base.swift; sourceTree = "<group>"; };
 		532E391B2297E68E0091D860 /* LeanBodyMass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeanBodyMass.swift; sourceTree = "<group>"; };
 		532E39212297ED070091D860 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		532E39232297ED070091D860 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		532E39252297ED070091D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532E392C2298D94B0091D860 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		532E392D2298D9690091D860 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		532E39222297ED070091D860 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				532E39232297ED070091D860 /* Tests.swift */,
 				532E39252297ED070091D860 /* Info.plist */,
 				53AA6877229A61C500BFB492 /* TestLeanBodyMass.swift */,
 				53AA6879229B3E9000BFB492 /* TestPropofol.swift */,
@@ -258,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53AA687A229B3E9000BFB492 /* TestPropofol.swift in Sources */,
-				532E39242297ED070091D860 /* Tests.swift in Sources */,
 				537107D9229BA78800FE3B3C /* AlfentanilTests.swift in Sources */,
 				53AA6878229A61C500BFB492 /* TestLeanBodyMass.swift in Sources */,
 				537107D7229BA74200FE3B3C /* RemifentanilTests.swift in Sources */,
